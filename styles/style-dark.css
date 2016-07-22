@@ -1,24 +1,23 @@
-/* style.css */
+/* style.css*/
 
 .dropbtn {
-    background-color: #4267b2;
+    background-color: #4CAF50;
     color: white;
     padding: 10px;
     font-size: 13px;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-
     }
     
     .dropbtn:hover {
-    	background-color: #72a0fb
+    	background-color: #4267b2
     }
 
 
 /* Begin HTML element styling */
 * {
-  color:#fbbc05;
+  color:#ccc;
   font-family:Arial;
   font-size:3vh;
 }
@@ -28,10 +27,9 @@ html {
 }
 
 body {
-  background-color:#fff;
+  background-color:#333;
   margin:0;
   max-height:100%;
-  max-width:100%;
   overflow:hidden;
 
   /* Begin disable text-selection */
@@ -49,11 +47,11 @@ p {
 a {
   font-family:'Poiret One', cursive;
   text-decoration:none;
-  color:#ddd;
+  color:#888;
 }
 
 a:hover {
-  color:#5d982f;
+  color:#fff;
 }
 
 /* End HTML element styling */
@@ -64,7 +62,6 @@ a:hover {
 #title {
   font-size:6vh;
   margin-top:-1vh;
-  color:#4267b2;
 }
 
 #container {
@@ -72,9 +69,8 @@ a:hover {
   width:65vh;
 }
 
-/* Background of box */
 #box {
-  background-color:#4267b2;
+  background-color:#292929;
   overflow:hidden;
   height:69vh;
   margin-top:3vh;
@@ -106,7 +102,7 @@ a:hover {
 #introtutorial {
   background-image:url('../images/introtutorial.png');
   width:66vh;
-  height:66vh;
+  height:59vh;
   background-position: center center;
   background-size:contain;
   background-repeat:no-repeat;
@@ -118,13 +114,12 @@ a:hover {
 /* A giant transparent overlay for swiping. It simplifies everything */
 #swipeArea {
   width:66vh;
-  height:60vh;
+  height:59vh;
   background-position: center center;
   background-size:contain;
   background-repeat:no-repeat;
   position: fixed;
   z-index:99999999;
-
 }
 
 #board {
@@ -217,14 +212,13 @@ a:hover {
 .cell {
   font-family: 'Open Sans', sans-serif;
   font-size:6.6vh;
-  color:#4267b2;
+  color:#555;
   width:20vh; /* Not 120px because otherwise cells are different widths */
   height:20vh;
-  background-color:#fff;
+  background-color:#999;
   padding:0;
-  border:1px solid #4267b2;
+  border:1px solid #333;
   box-sizing:border-box;
-  
 }
 
 .selected {
@@ -232,11 +226,11 @@ a:hover {
   box-sizing:border-box;
   font-size:6.8vh;
   font-weight:bold;
-  color:#4080ff;
+  color:#fff;
 }
 
 .selected.white {
-  color:none;
+  color:#000;
 }
 
 .poiret {
@@ -248,16 +242,15 @@ a:hover {
 }
 
 .light {
-  color:#fff;
+  color:#ddd;
 }
 
 .black {
-  background-color:#72a0fb; /* one shade darker than #333 */
-  color:#fff;
+  background-color:#292929; /* one shade darker than #333 */
 }
 
 .white {
-  background-color:#fff;
+  background-color:#ccc;
 }
 
 .left {
@@ -282,21 +275,19 @@ a:hover {
 }
 
 .dSelected {
-  border: 1px solid #4080ff;
+  border: 3px solid #227687;
   box-sizing:border-box;
   font-weight:bold;
   color:#fff;
-  -moz-box-shadow: inset 0 0 20px #4080ff;
-  -webkit-box-shadow: inset 0 0 20px #4080ff;
-  box-shadow: inset 0 0 20px #4080ff;
+  -moz-box-shadow: inset 0 0 10px #227687;
+  -webkit-box-shadow: inset 0 0 10px #227687;
+  box-shadow: inset 0 0 10px #227687;
   display:none;
-}
-
-
-.fb-like {
+}.fb-like {
   position:absolute !important;
   bottom:20px;
   left:20px;
+  display:none;
 }
 
 .fb-share-button {
@@ -318,17 +309,8 @@ a:hover {
 }
 
 
+
 /* Hides the "flyout" comment box when Facebook like button is clicked */
 .fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
   display: none !important;
 }
-
-
-
-
-
-
-
-
-
-

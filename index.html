@@ -13,9 +13,13 @@
     <meta name="description" content="An addicting numbers puzzle game.">
 
     <!-- End Facebook Metadata -->
+    <script src="scripts/theme.js"></script>
     <script src="scripts/production.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <!--Two alternative stylesheets-->
+    <link rel="stylesheet" type="text/css" title="blue" href="styles/style-light.css">
+    <link rel="alternate stylesheet" type="text/css" title="black" href="styles/style-dark.css">  
+
     <link href="styles/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -69,6 +73,11 @@
 
     <div id="container">
       <p id="title" class="light poiret center">parity</p>
+      <form id="button_form" style="margin-left:20vh;">
+        <input type="submit" onclick="switch_style('black');return false;" name="theme" value="Dark Theme" id="black_btn" class="dropbtn">
+        <input type="submit" onclick="switch_style('blue');return false;" name="theme" value="Light Theme" id="blut_btn" class="dropbtn">
+      </form>
+
       <div id="box">
         <div id="overlay">
           <h1></h1>
